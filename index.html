@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Juegos Roblox</title>
+    <style>
+        /* DISEÑO VISUAL DE LA PÁGINA (CSS) */
+        body {
+            background-color: #0e1117; /* Fondo negro gamer */
+            color: #ffffff;            /* Letras blancas */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #00bfff; /* Título azul brillante */
+        }
+        /* Contenedor para ordenar las tarjetas de los juegos */
+        .contenedor-juegos {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        /* Tarjeta de cada juego */
+        .tarjeta {
+            background-color: #1c2331;
+            border: 2px solid #2c3a50;
+            border-radius: 12px;
+            padding: 20px;
+            width: 220px;
+            text-align: center;
+        }
+        /* Botón de Jugar estilo Roblox */
+        .btn-jugar {
+            background-color: #0074e4; /* Azul clásico de botones */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ESTRUCTURA DE LA PÁGINA (HTML) -->
+    <h1>🎮 Plataforma de Juegos de Bloques 🎮</h1>
+
+    <div class="contenedor-juegos">
+        <!-- Juego Número 1 -->
+        <div class="tarjeta">
+            <div style="font-size: 50px;">🧱</div>
+            <h3>Blox Tycoon</h3>
+            <p>Construye tu fábrica y genera monedas virtuales.</p>
+            <button class="btn-jugar" onclick="jugar('Blox Tycoon')">Jugar</button>
+        </div>
+
+        <!-- Juego Número 2 -->
+        <div class="tarjeta">
+            <div style="font-size: 50px;">🏃</div>
+            <h3>Mega Obby</h3>
+            <p>Esquiva la lava y llega hasta la meta final.</p>
+            <button class="btn-jugar" onclick="jugar('Mega Obby')">Jugar</button>
+        </div>
+    </div>
+
+    <!-- CEREBRO DE LA PÁGINA (JAVASCRIPT) -->
+    <script>
+        function jugar(nombreJuego) {
+            alert("Conectando a los servidores de " + nombreJuego + "... ¡Prepárate!");
+        }
+    </script>
+</body>
+</html>
